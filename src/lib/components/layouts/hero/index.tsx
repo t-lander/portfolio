@@ -29,7 +29,7 @@ export default function Hero() {
                     <Link href="/about" className="button-primary">
                         More about me
                     </Link>
-                    <Link href="/about" className="button-secondary">
+                    <Link href="/articles" className="button-secondary">
                         Read my articles
                     </Link>
                 </div>
