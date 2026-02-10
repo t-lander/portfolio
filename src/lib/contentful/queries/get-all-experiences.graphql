@@ -1,0 +1,11 @@
+query GetAllExperiences {
+    experienceCollection {
+        items {
+            title
+            organization
+            description
+            startedAt
+            finishedAt
+        }
+    }
+}

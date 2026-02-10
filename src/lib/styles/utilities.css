@@ -1,0 +1,49 @@
+@utility center {
+    @apply flex justify-center items-center;
+}
+
+@utility corner-decoration {
+    @apply absolute size-2.25 bg-neutral-800 rotate-45;
+}
+
+@utility button-primary {
+    @apply cursor-pointer flex flex-nowrap items-center gap-2 w-fit bg-neutral-100  text-neutral-950 p-3 px-6 rounded font-semibold text-sm text-nowrap;
+    @apply hover:bg-neutral-300;
+}
+
+@utility button-secondary {
+    @apply cursor-pointer flex flex-nowrap items-center gap-2 w-fit border-neutral-800 hover:border-white border p-3 px-6 rounded font-semibold text-sm text-nowrap;
+    @apply hover:border-white hover:text-white;
+}
+
+@utility kbd {
+    @apply font-code text-sm border-neutral-800 border rounded h-8 min-w-8;
+}
+
+@utility puzzle-hover-current {
+    @apply border border-neutral-800 border-solid!;
+}
+
+@utility puzzle-hover-h {
+    @apply border-y border-neutral-800 border-dashed;
+}
+
+@utility puzzle-hover-v {
+    @apply border-x border-neutral-800 border-dashed;
+}
+
+@utility bg-stripes {
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(
+        45deg,
+        #262626 0,
+        #262626 1px,
+        transparent 0,
+        transparent 50%
+    );
+}
+
+@utility bg-dots {
+    background-size: 16px 16px;
+    background-image: radial-gradient(#262626 1px, transparent 1px);
+}

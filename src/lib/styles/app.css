@@ -1,0 +1,50 @@
+/* biome-ignore-all lint/correctness/noUnknownFunction: Biome doesn't understand Tailwind.css */
+
+@import "tailwindcss";
+@import "./utilities.css";
+
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+
+/*:root {}*/
+
+@theme inline {
+    --font-body: var(--font-inter);
+    --font-code: var(--font-jetbrains-mono);
+}
+
+html,
+body {
+    @apply m-0 h-full;
+}
+
+html {
+    @apply scroll-smooth;
+}
+
+body {
+    @apply bg-neutral-950 text-neutral-300 font-body antialiased;
+    @apply grid grid-rows-[auto_1fr_auto];
+}
+
+code,
+pre,
+tt,
+kbd,
+samp {
+    @apply font-code;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    @apply bg-neutral-900 text-neutral-300 border-none rounded max-w-sm mb-4;
+}
+
+label {
+    @apply text-neutral-300 mb-1;
+}
+
+input[type="submit"] {
+    @apply bg-blue-500 text-neutral-300 p-4 w-full max-w-sm rounded mb-4;
+}

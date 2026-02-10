@@ -1,0 +1,37 @@
+query GetLatestArticleQuery {
+    articleCollection(order: [sys_publishedAt_ASC], limit: 1) {
+        items {
+            title
+            slug
+            thumbnail {
+                url
+                description
+                width
+                height
+            }
+            description
+            body {
+                json
+                links {
+                    assets {
+                        block {
+                            sys {
+                                id
+                            }
+                            contentType
+                            url
+                            title
+                            width
+                            height
+                            description
+                        }
+                    }
+                }
+            }
+            keywords
+            sys {
+                publishedAt
+            }
+        }
+    }
+}

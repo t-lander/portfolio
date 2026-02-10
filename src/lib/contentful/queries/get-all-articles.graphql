@@ -1,0 +1,19 @@
+query GetAllArticlesQuery {
+    articleCollection(order: [sys_publishedAt_ASC]) {
+        items {
+            title
+            slug
+            thumbnail {
+                url
+                description
+                width
+                height
+            }
+            description
+            keywords
+            sys {
+                publishedAt
+            }
+        }
+    }
+}

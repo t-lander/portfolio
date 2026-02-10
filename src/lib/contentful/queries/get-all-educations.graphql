@@ -1,0 +1,11 @@
+query GetAllEducations {
+    educationCollection {
+        items {
+            title
+            institution
+            description
+            startedAt
+            finishedAt
+        }
+    }
+}
