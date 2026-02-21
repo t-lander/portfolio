@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.tabSize": 4,
+    "editor.indentSize": "tabSize",
+    "editor.detectIndentation": false
+}
